@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eventex - O maior encontro hacker do mundo!</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Eventex - O maior encontro hacker do mundo!">
+    <meta name="author" content="wttd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/basalstyle/style.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+
+    <script src="{{ url_for('static', filename='js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/smooth-scroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/retina-1.1.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</head>
+
+<body>
+
+    <!--NAV-->
+
+    <div class="header-frame row">
+
+        <header class="header header-inline min-h-3 row desktop-12 container" role="banner">
+
+            <div class="site-logo">
+                <h1><a href="index.html" rel="home">Eventex</h1>
+                <p class="site-description screen-reader-only">O maior encontro hacker do mundo!</p>
+            </div>
+
+            <nav class="nav-inline" role="navigation">
+                <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
+                <ul>
+                    <li><a data-scroll href="{{ url_for('inicial') }}#overview">Conferência</a></li>
+                    <li><a data-scroll href="{{ url_for('palestras') }}">Palestras</a></li>
+                    <li><a data-scroll href="{{ url_for('inicial') }}#speakers">Palestrantes</a></li>
+                    <li><a data-scroll href="i{{ url_for('inicial') }}#sponsors">Patrocinadores</a></li>
+                    <li><a data-scroll href="{{ url_for('inicial') }}#register">Inscrição</a></li>
+                    <li><a data-scroll href="{{ url_for('inicial') }}#venue">Local</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+    </div>
+
+    <!--CONTENT-->
+    <section>
+        <div class="speakers content row padding-bottom-3 desktop-8 container">
+            <h2>
+                <a href="https://www.youtube.com/@loianegroner/about" target="_blank">Loiane Groner</a>
+            </h2>
+            <img class="photo" src="./img/lg.jfif">
+            <p>
+                Possui 10+ anos de experiência em TI, trabalha como desenvolvedora e analista de negócios nos Estados Unidos e ama compartilhar conhecimento! Já palestrou por vários eventos no Brasil e Estados Unidos.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
